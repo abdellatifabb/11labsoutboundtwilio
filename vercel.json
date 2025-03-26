@@ -1,11 +1,16 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "api/outbound.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/outbound-call", "dest": "api/outbound.js" },
-    { "src": "/outbound-call-twiml", "dest": "api/outbound.js" },
-    { "src": "/outbound-media-stream", "dest": "api/outbound.js" }
-  ]
+    "version": 2,
+    "builds": [
+      {
+        "src": "outbound.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "outbound.js"
+      }
+    ]
 }
+  
