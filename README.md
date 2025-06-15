@@ -31,3 +31,28 @@ A Fastify server that integrates **Twilio Programmable Voice** with **ElevenLabs
 ```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
+```
+
+2. **Install dependencies:
+```bash
+
+npm install
+```
+3. Create a .env file with the following content:
+
+```bash
+
+PORT=8080
+
+TWILIO_ACCOUNT_SID=your_twilio_account_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_PHONE_NUMBER=your_twilio_phone_number
+
+ELEVENLABS_API_KEY=your_elevenlabs_api_key
+ELEVENLABS_AGENT_ID=your_elevenlabs_agent_id
+
+```
+
+
+
+
